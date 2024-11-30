@@ -24,20 +24,20 @@ form validation and styling using style sheets.  It also provides the ability
 for developers to preview their work as they modify their form.
                        DESC
 
-  s.homepage         = 'https://github.com/n8glenn/FormBuilderUI'
+  s.homepage         = 'https://github.com/n8glenn/FormBuilderUI-CocoaPod'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'n8glenn' => 'n8glenn@gmail.com' }
-  s.source           = { :git => 'https://github.com/n8glenn/FormBuilderUI.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/n8glenn/FormBuilderUI-CocoaPod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '17.6'
 
   s.source_files = 'FormBuilderUI/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'FormBuilderUI' => ['FormBuilderUI/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'FormBuilderUI' => ['FormBuilderUI/Assets/*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
