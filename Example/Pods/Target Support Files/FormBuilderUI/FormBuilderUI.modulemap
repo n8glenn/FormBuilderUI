@@ -1,0 +1,6 @@
+framework module FormBuilderUI {
+  umbrella header "FormBuilderUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

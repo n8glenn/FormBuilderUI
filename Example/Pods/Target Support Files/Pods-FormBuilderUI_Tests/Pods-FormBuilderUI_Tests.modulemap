@@ -1,0 +1,6 @@
+framework module Pods_FormBuilderUI_Tests {
+  umbrella header "Pods-FormBuilderUI_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FormBuilderUI'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FormBuilderUI.'
+  s.version          = '0.5.0'
+  s.summary          = 'FormBuilderUI is a SwiftUI version of FormBuilder for UIKit.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+FormBuilderUI is a swift user interface library that allows developers
+to declaratively create data entry forms for use with SwiftUI.  It includes
+form validation and styling using style sheets.  It also provides the ability
+for developers to preview their work as they modify their form.
                        DESC
 
   s.homepage         = 'https://github.com/n8glenn/FormBuilderUI'

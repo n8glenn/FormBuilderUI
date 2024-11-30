@@ -1,0 +1,16 @@
+PODS:
+  - FormBuilderUI (0.1.0)
+
+DEPENDENCIES:
+  - FormBuilderUI (from `../`)
+
+EXTERNAL SOURCES:
+  FormBuilderUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FormBuilderUI: 7e7695c72888dfdb524876419af2b6d946c18f02
+
+PODFILE CHECKSUM: 7b4fcb9393de30fe055c30ffb0339d2254cbbc92
+
+COCOAPODS: 1.12.1
