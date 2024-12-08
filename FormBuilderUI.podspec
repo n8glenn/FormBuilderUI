@@ -24,7 +24,7 @@ form validation and styling using style sheets.  It also provides the ability
 for developers to preview their work as they modify their form.
                        DESC
 
-  s.homepage         = 'https://github.com/n8glenn/FormBuilderUI-CocoaPod'
+  s.homepage         = 'https://github.com/n8glenn/FormBuilderUI'
   s.screenshots     = 'https://i.ibb.co/n0PPShp/Screenshot1.png', 'https://i.ibb.co/j5dd3w1/Screenshot2.png', 'https://i.ibb.co/fNSc33w/Screenshot3.png', 'https://i.ibb.co/6nxQVGM/Screenshot4.png', 'https://i.ibb.co/gdGxXXr/Screenshot5.png', 'https://i.ibb.co/ZLgg5TN/Screenshot6.png', 'https://i.ibb.co/cvSQLmv/Screenshot7.png', 'https://i.ibb.co/1nYSFRS/Screenshot8.png', 'https://i.ibb.co/Cs2K8J5/Screenshot9.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'n8glenn' => 'n8glenn@gmail.com' }
