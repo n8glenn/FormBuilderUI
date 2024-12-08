@@ -28,7 +28,7 @@ for developers to preview their work as they modify their form.
   s.screenshots     = 'https://i.ibb.co/n0PPShp/Screenshot1.png', 'https://i.ibb.co/j5dd3w1/Screenshot2.png', 'https://i.ibb.co/fNSc33w/Screenshot3.png', 'https://i.ibb.co/6nxQVGM/Screenshot4.png', 'https://i.ibb.co/gdGxXXr/Screenshot5.png', 'https://i.ibb.co/ZLgg5TN/Screenshot6.png', 'https://i.ibb.co/cvSQLmv/Screenshot7.png', 'https://i.ibb.co/1nYSFRS/Screenshot8.png', 'https://i.ibb.co/Cs2K8J5/Screenshot9.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'n8glenn' => 'n8glenn@gmail.com' }
-  s.source           = { :git => 'https://github.com/n8glenn/FormBuilderUI-CocoaPod.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/n8glenn/FormBuilderUI.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '17.6'
