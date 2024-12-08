@@ -44,11 +44,12 @@ extension UIView {
         static var selector = "themeColorSelector"
         static var key = "themeColorKey"
     }
-    
+    /*
     var backgroundColorCSS: (selector: String,key: String) {
         
         get {
-            guard let selector = objc_getAssociatedObject(self, &AssociatedKeys.selector) as? String else {
+            var selector = AssociatedKeys.selector
+            guard let selector = objc_getAssociatedObject(self, &selector) as? String else {
                 return ("","")
             }
             guard let key = objc_getAssociatedObject(self, &AssociatedKeys.key) as? String else {
@@ -71,9 +72,11 @@ extension UIView {
             _cssUpdateBackgroundColor()
         }
     }
-    
+    */
+    /*
     @objc private dynamic func _cssUpdateBackgroundColor() {
         
         self.backgroundColor = SwiftCssTheme.themeCSS.color(selector: self.backgroundColorCSS.selector, key: self.backgroundColorCSS.key)
     }
+     */
 }

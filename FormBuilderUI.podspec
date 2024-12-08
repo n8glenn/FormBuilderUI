@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FormBuilderUI'
-  s.version          = '0.5.0'
+  s.version          = '0.5.2'
   s.summary          = 'FormBuilderUI is a SwiftUI version of FormBuilder for UIKit.'
 
 # This description is used to generate tags and improve search results.
@@ -25,18 +25,19 @@ for developers to preview their work as they modify their form.
                        DESC
 
   s.homepage         = 'https://github.com/n8glenn/FormBuilderUI-CocoaPod'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://i.ibb.co/n0PPShp/Screenshot1.png', 'https://i.ibb.co/j5dd3w1/Screenshot2.png', 'https://i.ibb.co/fNSc33w/Screenshot3.png', 'https://i.ibb.co/6nxQVGM/Screenshot4.png', 'https://i.ibb.co/gdGxXXr/Screenshot5.png', 'https://i.ibb.co/ZLgg5TN/Screenshot6.png', 'https://i.ibb.co/cvSQLmv/Screenshot7.png', 'https://i.ibb.co/1nYSFRS/Screenshot8.png', 'https://i.ibb.co/Cs2K8J5/Screenshot9.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'n8glenn' => 'n8glenn@gmail.com' }
   s.source           = { :git => 'https://github.com/n8glenn/FormBuilderUI-CocoaPod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '17.6'
-
-  s.source_files = 'FormBuilderUI/Classes/**/*'
+  s.swift_version = '4.0'
+  
+  s.source_files = 'Classes/**/*'
   
   s.resource_bundles = {
-    'FormBuilderUI' => ['FormBuilderUI/Assets/*']
+    'FormBuilderUI' => ['Assets/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

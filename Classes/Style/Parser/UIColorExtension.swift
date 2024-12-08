@@ -56,7 +56,7 @@ extension UIColor {
      
      - parameter hex6: Six-digit hexadecimal value.
      */
-    public convenience init(hex6: UInt32, alpha: CGFloat = 1) {
+    public convenience init(hex6: UInt64, alpha: CGFloat = 1) {
         let divisor = CGFloat(255)
         let red     = CGFloat((hex6 & 0xFF0000) >> 16) / divisor
         let green   = CGFloat((hex6 & 0x00FF00) >>  8) / divisor
@@ -69,7 +69,7 @@ extension UIColor {
      
      - parameter hex8: Eight-digit hexadecimal value.
      */
-    public convenience init(hex8: UInt32) {
+    public convenience init(hex8: UInt64) {
         let divisor = CGFloat(255)
         let red     = CGFloat((hex8 & 0xFF000000) >> 24) / divisor
         let green   = CGFloat((hex8 & 0x00FF0000) >> 16) / divisor
@@ -89,9 +89,9 @@ extension UIColor {
         }
         
         let hexString: String = String(rgba[String.Index.init(encodedOffset: 1)...])
-        var hexValue:  UInt32 = 0
+        var hexValue:  UInt64 = 0
         
-        guard Scanner(string: hexString).scanHexInt32(&hexValue) else {
+        guard Scanner(string: hexString).scanHexInt64(&hexValue) else {
             throw UIColorInputError.unableToScanHexValue
         }
         switch (hexString.count) {

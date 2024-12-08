@@ -106,7 +106,7 @@ struct RadioButtonGroup: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            ForEach(0..<items.count) { index in
+            ForEach(0..<items.count, id: \.self) { index in
                 RadioButton(self.items[index], field: self.field, callback: self.callback, selectedID: self.selectedId)
             }
         }

@@ -75,12 +75,6 @@
 		9034D45C2CF975D300263C1D /* FBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9034D3ED2CF975D300263C1D /* FBFile.swift */; };
 		9034D45D2CF975D300263C1D /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9034D4002CF975D300263C1D /* ImagePickerView.swift */; };
 		9034D45E2CF975D300263C1D /* ComboBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9034D3FD2CF975D300263C1D /* ComboBoxView.swift */; };
-		9034D45F2CF975D300263C1D /* DefaultStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 9034D3D52CF975D300263C1D /* DefaultStyle.css */; };
-		9034D4602CF975D300263C1D /* GreenStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4142CF975D300263C1D /* GreenStyle.css */; };
-		9034D4612CF975D300263C1D /* Settings.spec in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4152CF975D300263C1D /* Settings.spec */; };
-		9034D4622CF975D300263C1D /* DefaultStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 9034D3D52CF975D300263C1D /* DefaultStyle.css */; };
-		9034D4632CF975D300263C1D /* GreenStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4142CF975D300263C1D /* GreenStyle.css */; };
-		9034D4642CF975D300263C1D /* Settings.spec in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4152CF975D300263C1D /* Settings.spec */; };
 		9034D4652CF975D300263C1D /* FBSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9034D3F52CF975D300263C1D /* FBSettings.swift */; };
 		9034D4662CF975D300263C1D /* FBSwitchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9034D3E12CF975D300263C1D /* FBSwitchField.swift */; };
 		9034D4672CF975D300263C1D /* FBDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9034D3D92CF975D300263C1D /* FBDropDownView.swift */; };
@@ -145,6 +139,12 @@
 		9034D4A32CF975D300263C1D /* FBFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9034D3ED2CF975D300263C1D /* FBFile.swift */; };
 		9034D4A42CF975D300263C1D /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9034D4002CF975D300263C1D /* ImagePickerView.swift */; };
 		9034D4A52CF975D300263C1D /* ComboBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9034D3FD2CF975D300263C1D /* ComboBoxView.swift */; };
+		9034D4F72CFA95EC00263C1D /* GreenStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4F52CFA95EC00263C1D /* GreenStyle.css */; };
+		9034D4F82CFA95EC00263C1D /* Settings.spec in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4F62CFA95EC00263C1D /* Settings.spec */; };
+		9034D4F92CFA95EC00263C1D /* DefaultStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4F42CFA95EC00263C1D /* DefaultStyle.css */; };
+		9034D4FA2CFA95EC00263C1D /* GreenStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4F52CFA95EC00263C1D /* GreenStyle.css */; };
+		9034D4FB2CFA95EC00263C1D /* Settings.spec in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4F62CFA95EC00263C1D /* Settings.spec */; };
+		9034D4FC2CFA95EC00263C1D /* DefaultStyle.css in Resources */ = {isa = PBXBuildFile; fileRef = 9034D4F42CFA95EC00263C1D /* DefaultStyle.css */; };
 		A64ED1D15F08B9ACFAF7EBAAF96855B6 /* Pods-FormBuilderUI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F864ECD8F27292659F3B7097A345348 /* Pods-FormBuilderUI_Example-dummy.m */; };
 		AE4B2D878A9C5CC07E7CB42A8E0D0E41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		B053E8B74AE819A1E58C3891E8F7A7D2 /* FormBuilderUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96815B5449CBCB6886726B2DCCD9A530 /* FormBuilderUI-dummy.m */; };
@@ -187,7 +187,6 @@
 		746BE40522A315CDB631222EEBC56F32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7AE310FAB3E74073549D9D953417F3A7 /* FormBuilderUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FormBuilderUI.release.xcconfig; sourceTree = "<group>"; };
 		7EFB8E81AD57A2780CEC8DB997844CC0 /* FormBuilderUI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FormBuilderUI.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		9034D3D52CF975D300263C1D /* DefaultStyle.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = DefaultStyle.css; path = ../Classes/DefaultStyle.css; sourceTree = "<group>"; };
 		9034D3D62CF975D300263C1D /* FBCheckBoxField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBCheckBoxField.swift; sourceTree = "<group>"; };
 		9034D3D72CF975D300263C1D /* FBComboBoxField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBComboBoxField.swift; sourceTree = "<group>"; };
 		9034D3D82CF975D300263C1D /* FBDatePickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBDatePickerField.swift; sourceTree = "<group>"; };
@@ -246,14 +245,15 @@
 		9034D4102CF975D300263C1D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		9034D4112CF975D300263C1D /* View+dimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+dimensions.swift"; sourceTree = "<group>"; };
 		9034D4122CF975D300263C1D /* View+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Snapshot.swift"; sourceTree = "<group>"; };
-		9034D4142CF975D300263C1D /* GreenStyle.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = GreenStyle.css; path = ../Classes/GreenStyle.css; sourceTree = "<group>"; };
-		9034D4152CF975D300263C1D /* Settings.spec */ = {isa = PBXFileReference; lastKnownFileType = text; name = Settings.spec; path = ../Classes/Settings.spec; sourceTree = "<group>"; };
 		9034D4162CF975D300263C1D /* CssLexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CssLexer.swift; sourceTree = "<group>"; };
 		9034D4172CF975D300263C1D /* CssParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CssParser.swift; sourceTree = "<group>"; };
 		9034D4182CF975D300263C1D /* SwiftCSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCSS.swift; sourceTree = "<group>"; };
 		9034D4192CF975D300263C1D /* SwiftCssTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCssTheme.swift; sourceTree = "<group>"; };
 		9034D41A2CF975D300263C1D /* SwiftDeviceCss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDeviceCss.swift; sourceTree = "<group>"; };
 		9034D41B2CF975D300263C1D /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		9034D4F42CFA95EC00263C1D /* DefaultStyle.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = DefaultStyle.css; sourceTree = "<group>"; };
+		9034D4F52CFA95EC00263C1D /* GreenStyle.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = GreenStyle.css; sourceTree = "<group>"; };
+		9034D4F62CFA95EC00263C1D /* Settings.spec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Settings.spec; sourceTree = "<group>"; };
 		96815B5449CBCB6886726B2DCCD9A530 /* FormBuilderUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FormBuilderUI-dummy.m"; sourceTree = "<group>"; };
 		9A125CF3BC0ADDE6A280632E20AB908C /* Pods-FormBuilderUI_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FormBuilderUI_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -380,9 +380,9 @@
 		9034D3D32CF974D300263C1D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				9034D3D52CF975D300263C1D /* DefaultStyle.css */,
-				9034D4142CF975D300263C1D /* GreenStyle.css */,
-				9034D4152CF975D300263C1D /* Settings.spec */,
+				9034D4F42CFA95EC00263C1D /* DefaultStyle.css */,
+				9034D4F52CFA95EC00263C1D /* GreenStyle.css */,
+				9034D4F62CFA95EC00263C1D /* Settings.spec */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -679,9 +679,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9034D45F2CF975D300263C1D /* DefaultStyle.css in Resources */,
-				9034D4602CF975D300263C1D /* GreenStyle.css in Resources */,
-				9034D4612CF975D300263C1D /* Settings.spec in Resources */,
+				9034D4F72CFA95EC00263C1D /* GreenStyle.css in Resources */,
+				9034D4F82CFA95EC00263C1D /* Settings.spec in Resources */,
+				9034D4F92CFA95EC00263C1D /* DefaultStyle.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,9 +689,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9034D4622CF975D300263C1D /* DefaultStyle.css in Resources */,
-				9034D4632CF975D300263C1D /* GreenStyle.css in Resources */,
-				9034D4642CF975D300263C1D /* Settings.spec in Resources */,
+				9034D4FA2CFA95EC00263C1D /* GreenStyle.css in Resources */,
+				9034D4FB2CFA95EC00263C1D /* Settings.spec in Resources */,
+				9034D4FC2CFA95EC00263C1D /* DefaultStyle.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
