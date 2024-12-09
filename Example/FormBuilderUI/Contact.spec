@@ -150,7 +150,7 @@ section                             // start the first section
 			id Country
 			type combobox
 			caption Country
-			option-set MyCountry
+			option-set Country
 			value US
 			required true
 	line
