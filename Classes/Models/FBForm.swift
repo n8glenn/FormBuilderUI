@@ -101,6 +101,11 @@ public class FBForm: ObservableObject
         self.init(file: file, style: style, settings: "Settings")
     }
     
+    public convenience init(file: String, settings: String) {
+        
+        self.init(file: file, style: "DefaultStyle",  settings: settings)
+    }
+    
     public convenience init(file:String, style: String, delegate:FormDelegate)
     {
         self.init(file: file, style: style)
