@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FormBuilderUI'
-  s.version          = '0.5.2'
+  s.version          = '0.5.3'
   s.summary          = 'FormBuilderUI is a SwiftUI version of FormBuilder for UIKit.'
 
 # This description is used to generate tags and improve search results.

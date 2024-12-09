@@ -91,62 +91,28 @@ public class FBForm: ObservableObject
 
     public var delegate:FormDelegate?
     
-    public init(file: String, style: String?) {
-
-        self.styleSet = FBStyleSet(named: "DefaultStyle")
-        if let style = style {
-            self.styleSet?.load(file: style)
-        }
-        self.styleClass = self.tag
-        self.file = FBFile(file: file)
+    public convenience init(file: String) {
         
-        guard let file = self.file else {
-            return
-        }
-        var i:Int = 0
-        while (i < file.lines.count)
-        {
-            switch (self.file!.lines[i].keyword)
-            {
-            case FBKeyWord.Style:
-                //self.tag = self.file!.lines[i].value
-                if let styleClass = self.file?.lines[i].value {
-                    self.styleClass = styleClass
-                }
-                i += 1
-                
-                break
-            case FBKeyWord.Editable:
-                self.editable = (file.lines[i].value.lowercased() != "false")
-                i += 1
-                break
-            case FBKeyWord.Section:
-                let indentLevel:Int = file.lines[i].indentLevel
-                let spaceLevel:Int = file.lines[i].spaceLevel
-                i += 1
-                var range = (i, i)
-                while ((i < self.file!.lines.count) &&
-                    ((file.lines[i].indentLevel > indentLevel) ||
-                        (file.lines[i].spaceLevel > spaceLevel) ||
-                    (file.lines[i].keyword == FBKeyWord.None)))
-                {
-                    i += 1
-                }
-                range.1 = i - 1
-                self.sections.append(FBSection(form: self, lines: range))
-                break
-            default:
-                i += 1
-                break
-            }
-        }
+        self.init(file: file, style: "DefaultStyle")
     }
     
+    public convenience init(file: String, style: String) {
+        
+        self.init(file: file, style: style, settings: "Settings")
+    }
+    
+    public convenience init(file:String, style: String, delegate:FormDelegate)
+    {
+        self.init(file: file, style: style)
+        self.delegate = delegate
+    }
+
     public init(file:String, style:String, settings:String) {
 
         self.styleSet = FBStyleSet(named: "DefaultStyle")
-        self.styleSet?.load(file: style)
-
+        if (style != "DefaultStyle") {
+            self.styleSet?.load(file: style)
+        }
         self.styleSet?.form = self
         self.settings.load(file: settings)
         self.styleClass = self.tag
@@ -193,53 +159,6 @@ public class FBForm: ObservableObject
         }
     }
     
-    public init(file:String, style: String, delegate:FormDelegate)
-    {
-        self.styleSet = FBStyleSet(named: "DefaultStyle")
-        self.styleSet?.load(file: style)
-        self.delegate = delegate
-        self.styleClass = self.tag
-        
-        self.file = FBFile(file: file)
-        
-        var i:Int = 0
-        while (i < self.file!.lines.count)
-        {
-            switch (self.file!.lines[i].keyword)
-            {
-            case FBKeyWord.Style:
-                if let _ = self.styleSet?.style(named: self.file?.lines[i].value ?? "") {
-                    self.styleClass = self.file?.lines[i].value
-                }
-                i += 1
-                
-                break
-            case FBKeyWord.Editable:
-                self.editable = (self.file!.lines[i].value.lowercased() != "false")
-                i += 1
-                break
-            case FBKeyWord.Section:
-                let indentLevel:Int = self.file!.lines[i].indentLevel
-                let spaceLevel:Int = self.file!.lines[i].spaceLevel
-                i += 1
-                var range = (i, i)
-                while ((i < self.file!.lines.count) &&
-                    ((self.file!.lines[i].indentLevel > indentLevel) ||
-                        (self.file!.lines[i].spaceLevel > spaceLevel) ||
-                    (self.file!.lines[i].keyword == FBKeyWord.None)))
-                {
-                    i += 1
-                }
-                range.1 = i - 1
-                self.sections.append(FBSection(form: self, lines: range))
-                break
-            default:
-                i += 1
-                break
-            }
-        }
-    }
-
     public init(file:FBFile, style: String, delegate:FormDelegate)
     {
         self.styleSet = FBStyleSet(named: "DefaultStyle")
