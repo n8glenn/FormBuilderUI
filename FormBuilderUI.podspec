@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FormBuilderUI'
-  s.version          = '0.5.3'
+  s.version          = '0.5.4'
   s.summary          = 'FormBuilderUI is a SwiftUI version of FormBuilder for UIKit.'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ for developers to preview their work as they modify their form.
   
   s.source_files = 'Classes/**/*'
   
-  s.resources = ['Assets/DefaultStyle.css', 'Assets/GreenStyle.css', 'Settings.spec']
+  s.resources = ['Assets/DefaultStyle.css', 'Assets/GreenStyle.css', 'Assets/Settings.spec']
   s.resource_bundles = {
     'FormBuilderUI' => ['Assets/*']
   }

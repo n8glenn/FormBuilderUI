@@ -66,17 +66,6 @@ public class FBOption: NSObject, Identifiable
                 break
             case FBKeyWord.Style:
                 self.tag = file.lines[i].description
-                /*
-                if let styleClass = self.styleSet?.style(named: self.tag ?? "") {
-                    self.style = FBStyleClass(withClass:styleClass)
-                }
-                */
-                /*
-                if (self.field != nil)
-                {
-                    //self.style?.parent = self.field?.style // override the default parents, our styles always descend from the style of the parent object!
-                }
-                */
                 i += 1
                 
                 break

@@ -38,6 +38,11 @@ open class FBInputField: FBField
         }
         set(newValue)
         {
+            if (self.fieldType == .ComboBox) {
+                if (self.optionSet?.option(named: newValue as? String ?? "") == nil) {
+                    return
+                }
+            }
             _data = newValue
             _input = newValue
             hasData = self.hasValue()

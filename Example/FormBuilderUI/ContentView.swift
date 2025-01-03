@@ -10,7 +10,7 @@ import FormBuilderUI
 
 struct ContentView: View {
     @State private var contact:Contact = Contact(Street: "Street 1", City: "Bay City", State: "TX")
-    var form:FBForm = FBForm(file: "Contact")
+    var form:FBForm = FBForm(file: "Contact", settings: "MySettings")
     @State private var errorString:String = ""
     @State private var showError:Bool = false
     @State private var styleChanged:Bool = false 

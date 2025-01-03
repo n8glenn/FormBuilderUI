@@ -87,6 +87,13 @@ open class FBStyleSet: NSObject
         }
         if (path == nil)
         {
+            let bundle = Bundle.init(for: self.classForCoder)
+            if let bundleURL = bundle.url(forResource: "FormBuilderUI", withExtension: "bundle") {
+                let podBundle = Bundle(url: bundleURL)
+                path = podBundle?.url(forResource: file, withExtension: "css")
+            }
+        }
+        if (path == nil) {
             return
         }
         

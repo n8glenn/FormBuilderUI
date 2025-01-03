@@ -30,7 +30,11 @@ public class FBFile: NSObject
         path = Bundle.main.path(forResource: file, ofType: "spec")
         if (path == nil)
         {
-            path = Bundle.main.path(forResource: file, ofType: "spec")
+            let bundle = Bundle.init(for: self.classForCoder)
+            if let bundleURL = bundle.url(forResource: "FormBuilderUI", withExtension: "bundle") {
+                let podBundle = Bundle(url: bundleURL)
+                path = podBundle?.url(forResource: file, withExtension: "spec")?.absoluteString
+            }
         }
         if (path == nil)
         {

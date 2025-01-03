@@ -98,8 +98,7 @@ section                             // start the first section
             id State
             type combobox
             caption State
-            option-set State
-            value TX
+            option-set MyState
             required true
 	line
 		id Province
@@ -150,7 +149,7 @@ section                             // start the first section
 			id Country
 			type combobox
 			caption Country
-			option-set Country
+			option-set MyCountry
 			value US
 			required true
 	line

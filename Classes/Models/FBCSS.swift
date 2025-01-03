@@ -31,7 +31,11 @@ public class FBCSS : NSObject {
         path = Bundle.main.path(forResource: file, ofType: "css")
         if (path == nil)
         {
-            path = Bundle.main.path(forResource: file, ofType: "css")
+            let bundle = Bundle.init(for: self.classForCoder)
+            if let bundleURL = bundle.url(forResource: "FormBuilderUI", withExtension: "bundle") {
+                let podBundle = Bundle(url: bundleURL)
+                path = podBundle?.url(forResource: file, withExtension: "css")?.absoluteString
+            }
         }
         if (path == nil)
         {

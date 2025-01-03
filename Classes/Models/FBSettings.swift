@@ -11,10 +11,6 @@ import Foundation
 open class FBSettings: NSObject
 {
     var editable:Bool = true
-    //var dateFormat:String = "yyyy-MM-dd"
-    //var timeFormat:String = "hh:mm:ss a"
-    //var dateTimeFormat:String = "yyyy-MM-dd hh:mm:ss a"
-    
     var formats:Dictionary<String, String> = Dictionary<String, String>()
     var optionSet:Dictionary<String, FBOptionSet> = Dictionary<String, FBOptionSet>()
     
@@ -90,18 +86,7 @@ open class FBSettings: NSObject
                     }
                 }
                 optionSetRange.1 = i - 1
-                if (self.optionSet[optionId] == nil)
-                {
-                    self.optionSet[optionId] = FBOptionSet(field: nil, file: settingsFile, lines: optionSetRange)
-                }
-                else
-                {
-                    let optionSet:FBOptionSet = FBOptionSet(field: nil, file: settingsFile, lines: optionSetRange)
-                    for option in optionSet.options
-                    {
-                        self.optionSet[optionId]?.updateOption(option: option)
-                    }
-                }
+                self.optionSet[optionId] = FBOptionSet(field: nil, file: settingsFile, lines: optionSetRange)
                 break
             default:
                 i += 1
@@ -183,18 +168,7 @@ open class FBSettings: NSObject
                     }
                 }
                 optionSetRange.1 = i - 1
-                if (self.optionSet[optionId] == nil)
-                {
-                    self.optionSet[optionId] = FBOptionSet(field: nil, file: settingsFile, lines: optionSetRange)
-                }
-                else
-                {
-                    let optionSet:FBOptionSet = FBOptionSet(field: nil, file: settingsFile, lines: optionSetRange)
-                    for option in optionSet.options
-                    {
-                        self.optionSet[optionId]?.updateOption(option: option)
-                    }
-                }
+                self.optionSet[optionId] = FBOptionSet(field: nil, file: settingsFile, lines: optionSetRange)
                 break
             default:
                 i += 1

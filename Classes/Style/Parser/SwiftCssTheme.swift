@@ -44,39 +44,4 @@ extension UIView {
         static var selector = "themeColorSelector"
         static var key = "themeColorKey"
     }
-    /*
-    var backgroundColorCSS: (selector: String,key: String) {
-        
-        get {
-            var selector = AssociatedKeys.selector
-            guard let selector = objc_getAssociatedObject(self, &selector) as? String else {
-                return ("","")
-            }
-            guard let key = objc_getAssociatedObject(self, &AssociatedKeys.key) as? String else {
-                return ("","")
-            }
-            return (selector,key)
-        }
-        
-        set {
-            
-            let selector = newValue.selector
-            let key = newValue.key
-            
-            objc_setAssociatedObject(self, &AssociatedKeys.selector, selector, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            objc_setAssociatedObject(self, &AssociatedKeys.key, key, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            
-            NotificationCenter.default.addObserver(self, selector: #selector(_cssUpdateBackgroundColor), name: SwiftCssTheme.updateThemeNotification, object: nil)
-            
-            //set css and update backgroundColor
-            _cssUpdateBackgroundColor()
-        }
-    }
-    */
-    /*
-    @objc private dynamic func _cssUpdateBackgroundColor() {
-        
-        self.backgroundColor = SwiftCssTheme.themeCSS.color(selector: self.backgroundColorCSS.selector, key: self.backgroundColorCSS.key)
-    }
-     */
 }

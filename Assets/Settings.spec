@@ -184,9 +184,6 @@ option-set
 		id CR
 		value Costa Rica
 	option
-		id CI
-		value Cote D'Ivoire
-	option
 		id HR
 		value Croatia
 	option
@@ -304,17 +301,11 @@ option-set
 		id GG
 		value Guernsey and Alderney
 	option
-		id GF
-		value Guiana, French
-	option
 		id GN
 		value Guinea
 	option
 		id GW
 		value Guinea-Bissau
-	option
-		id GP
-		value Guinea, Equatorial
 	option
 		id GY
 		value Guyana
@@ -595,9 +586,6 @@ option-set
 		id RW
 		value Rwanda
 	option
-		id EH
-		value Sahara, Western
-	option
 		id BL
 		value Saint Barthelemy (FR)
 	option
@@ -706,9 +694,6 @@ option-set
 		id TH
 		value Thailand
 	option
-		id TP
-		value Timor-Leste (East Timor)
-	option
 		id TG
 		value Togo
 	option
@@ -771,9 +756,6 @@ option-set
 	option
 		id VN
 		value Vietnam
-	option
-		id VG
-		value Virgin Islands, British
 	option
 		id VI
 		value Virgin Islands, U.S.
