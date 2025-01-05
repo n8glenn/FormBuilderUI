@@ -26,28 +26,27 @@ public class FBFile: NSObject
     
     public func load(file: String)
     {
-        var path:String? = nil
-        path = Bundle.main.path(forResource: file, ofType: "spec")
+        var path:URL? = nil
+        path = Bundle.main.url(forResource: file, withExtension: "spec")
+        if (path == nil)
+        {
+            let bundle = Bundle.init(for: self.classForCoder)
+            path = bundle.url(forResource: file, withExtension: "spec")
+        }
         if (path == nil)
         {
             let bundle = Bundle.init(for: self.classForCoder)
             if let bundleURL = bundle.url(forResource: "FormBuilderUI", withExtension: "bundle") {
                 let podBundle = Bundle(url: bundleURL)
-                path = podBundle?.url(forResource: file, withExtension: "spec")?.absoluteString
+                path = podBundle?.url(forResource: file, withExtension: "spec")
             }
         }
-        if (path == nil)
-        {
-            let bundle = Bundle.init(for: self.classForCoder)
-            path = bundle.path(forResource: file, ofType: "spec")
-        }
-        if (path == nil)
-        {
+        if (path == nil) {
             return
         }
         
         do {
-            let content:String = try String(contentsOfFile: path!, encoding: String.Encoding.utf8)
+            let content = try String(contentsOf: path!, encoding: .utf8)
             var textlines = content.split(separator: "\n")
             var continued:Bool = false
             while (textlines.count > 0)
